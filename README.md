@@ -31,12 +31,12 @@ The window opens at a size that fits your monitor (about 90% of it) and can be r
 Everything is drawn at the window's **real pixel size**: shapes are scaled and fonts are rasterised at the exact
 pixel size they are drawn at, so text stays sharp at 1280x720, 1920x1080, 2560x1440, ultrawide, etc. The 16:9
 layout is centred; extra window area is filled with the background colour. (v1 drew a fixed 1280x720 picture and
-stretched it, which looked blurry on a 1080p monitor.) Text colour on coloured buttons is chosen automatically
+stretched it, which looked blurry on a 1080p monitor. It looked buns so I just skipped over the v1 upload lolz.) Text colour on coloured buttons is chosen automatically
 from the button colour so it always has enough contrast.
 
 ## Playing
 
-* **Play a Round** — pick a focus school (or random), read the scenario, pick A–D (keys A–D work too).
+* **Play a Round** — pick a focus school (or random), read the scenario, pick A–D with your mouse (keys A–D work too).
   Correct answers earn 10 points and a Duel card; replaying a scenario correctly levels the card up (max 3).
 * **Duel Mode** unlocks at 40 collected cards. Build decks in *Manage decks* (exactly 40 cards, max 3 copies),
   or use a preset. Pick Easy / Normal / Hard, watch the coin toss, take a mulligan, then duel.
@@ -44,18 +44,18 @@ from the button colour so it always has enough contrast.
   **Graveyard** and **Banish** piles and a Trap zone. Hover any card for its full effect text. **Click a Graveyard or
   Banish pile — yours or the opponent's — to look inside**; switch side/zone with the tabs.
 * Click a hand card, then *Summon / Activate / Set Trap*; click a ready monster, then an enemy monster (or the
-  opponent's life bar for a direct attack). Keys: **E** end turn, **Enter** play, **H** history, **Esc** cancel,
-  **Space** skip the current animations. The **Anim** button cycles Normal / Fast / Off.
+  opponent's life bar for a direct attack, i.e. Opponent's Face in card texts). Keys: **E** end turn, **Enter** play, **H** history, **Esc** cancel,
+  **Space** skip the current animations. The **Anim** button cycles Normal / Fast / Off (pretty self-explanatory here).
 * **Graveyard effects**: some cards can be used *from* the Graveyard on your turn (pay Insight, the card is banished).
   When one is usable, your Graveyard pile pulses gold with a count badge; inside, those cards are marked READY and a
   *Use effect* button appears.
 * **Animations** replay everything that happens — draws, summons, spell and Trap activations, every card effect,
   attacks, damage, destruction, banishing, cards going to the Graveyard, coin flips and turn changes. The opponent's
-  turn is played out the same way (no pop-up); the History log keeps the full record.
+  turn is played out the same way; there's also a History log that keeps the full record.
 
 ## Cards
 
-All 60 cards are different: no two share cost, stats and effects. Costs run from 1 to 6 (23 cards cost 2 or less), and
+All 60 cards are different: no two share cost, stats and effects(well, supposedly LMFAO). Costs run from 1 to 6 (23 cards cost 2 or less), and
 Monsters with higher costs have better base stats. Level 2 adds +1 ATK, level 3 adds +1 HP, and effect numbers grow
 with level (shown as `[Lv1, Lv2, Lv3]` in the data). Effects are built from a small set of building blocks
 (see `OpKind` in `src/engine/types.hpp`) combined with a timing: **On Summon**, **when destroyed**, **when milled**,
@@ -99,7 +99,7 @@ level (for example "Deal 3 damage to the enemy's face."), so the description can
 
 * `--script file.txt` commands: `click X Y`, `move X Y`, `type TEXT`, `key NAME`, `wait N`, `shot FILE.png`, `quit`
   (coordinates are in the 1280x720 layout space; animations run at a fixed 60 steps per second so runs are repeatable).
-* Save files use the same JSON as the Python version: copy `extras/maxtest_profile.json` into `saves/` for a test
-  profile with all 60 cards at Level 3 and a ready 40-card deck.
+* Save files use the same JSON: copy `extras/maxtest_profile.json` into `saves/` for a test
+  profile with all 60 cards at Level 3 and a ready 40-card deck(not very well made :P).
 * Text input accepts Latin characters only (the bundled DejaVu font has no CJK glyphs).
 * Fonts: DejaVu Sans (free licence, see `assets/fonts/DEJAVU-LICENSE.txt`). JSON: nlohmann/json (MIT). Graphics: raylib (zlib).
