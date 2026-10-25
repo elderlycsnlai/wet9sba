@@ -1,0 +1,44 @@
+[
+  {
+    "id": "STO",
+    "name": "Stoicism",
+    "effect_type": "Shields, healing and negation",
+    "core_belief": "Focus on what you can control, and accept calmly what you cannot.",
+    "description": "Stoicism teaches that peace of mind comes from focusing your energy only on what you can actually control — your own actions, effort and attitude — and accepting everything else calmly, without wasted anger or panic."
+  },
+  {
+    "id": "EXI",
+    "name": "Existentialism",
+    "effect_type": "Searching, drawing and bouncing",
+    "core_belief": "No one is born with a fixed purpose; you become responsible for the meaning you choose.",
+    "description": "Existentialism holds that people are not born with a ready-made purpose. You create meaning through the choices you actually make, and you are responsible for owning the consequences of those freely chosen actions."
+  },
+  {
+    "id": "ABS",
+    "name": "Absurdism",
+    "effect_type": "Coin flips and chaos",
+    "core_belief": "The world will not always be fair or make sense, so keep going anyway.",
+    "description": "Absurdism accepts that the world will not always be fair, predictable or reasonable, no matter how well you plan. Rather than despair, the Absurdist response is to keep going anyway — sometimes even finding humour in it."
+  },
+  {
+    "id": "NIH",
+    "name": "Nihilism",
+    "effect_type": "Destruction and the Graveyard",
+    "core_belief": "A challenge posed by philosophers: what if nothing has built-in meaning at all?",
+    "description": "Nihilism is the challenging idea that things may not have any built-in, permanent meaning. In Faust's Deck this is always presented as a question worth thinking about, paired with how other schools of thought would answer it."
+  },
+  {
+    "id": "UTI",
+    "name": "Utilitarianism",
+    "effect_type": "Team buffs and revival",
+    "core_belief": "Choose the action that creates the greatest good for the greatest number of people.",
+    "description": "Utilitarianism judges a choice by its overall consequences: the best action is the one that creates the greatest total wellbeing, or the fairest outcome, for the greatest number of people affected — not just for yourself."
+  },
+  {
+    "id": "HED",
+    "name": "Hedonism",
+    "effect_type": "Rush, drain and trade-offs",
+    "core_belief": "Pleasure and avoiding pain matter, but weigh short-term fun against longer-term regret.",
+    "description": "Hedonism holds that pleasure and avoiding pain are genuinely important. A wise Hedonist, though, weighs quick, short-term pleasure against the longer-term pain or regret it might cause, and chooses the path with the best overall balance."
+  }
+]

@@ -1,0 +1,2427 @@
+[
+  {
+    "id": "ABS-01",
+    "school_id": "ABS",
+    "scenario": "You prepared for weeks for a talent show, but on the day the sound system breaks and ruins your act through no fault of your own.",
+    "choices": {
+      "D": "Accept the world owes you nothing, and perform anyway.",
+      "A": "Storm off the stage and refuse to finish your act.",
+      "B": "Blame yourself harshly for something that wasn't your fault.",
+      "C": "Insist the show gives you a special second try later."
+    },
+    "correct": "D",
+    "explanation": "An Absurdist embraces a world that will not always make sense, and keeps going regardless.",
+    "difficulty": 2,
+    "collectible": "The Grin",
+    "card_type": "MONSTER",
+    "cost": 4,
+    "atk": 3,
+    "hp": 3,
+    "tag": "Gambler's Grin",
+    "rush": false,
+    "abilities": [
+      {
+        "on": "TURN_START",
+        "do": [
+          {
+            "op": "coin",
+            "heads": [
+              {
+                "op": "dmg_face",
+                "n": [
+                  2,
+                  3,
+                  4
+                ]
+              }
+            ],
+            "tails": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ABS-02",
+    "school_id": "ABS",
+    "scenario": "It rains on the one day of the year your school holds its outdoor sports day.",
+    "choices": {
+      "A": "Laugh at the bad luck, and enjoy the backup plan instead.",
+      "B": "Complain for the rest of the week that luck is against you.",
+      "C": "Refuse to take part once the event is rescheduled.",
+      "D": "Insist the whole event should be cancelled permanently."
+    },
+    "correct": "A",
+    "explanation": "Absurdism accepts that events won't always go as planned, and responds with good humour rather than resentment.",
+    "difficulty": 1,
+    "collectible": "The Juggler's Ball",
+    "card_type": "MONSTER",
+    "cost": 1,
+    "atk": 1,
+    "hp": 1,
+    "tag": "Heads or Draw",
+    "rush": false,
+    "abilities": [
+      {
+        "on": "SUMMON",
+        "do": [
+          {
+            "op": "coin",
+            "heads": [
+              {
+                "op": "draw",
+                "n": [
+                  1,
+                  1,
+                  2
+                ]
+              }
+            ],
+            "tails": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ABS-03",
+    "school_id": "ABS",
+    "scenario": "You spent hours on an art project for the school display, and a hallway accident smudges it right before judging.",
+    "choices": {
+      "B": "Accept the bad luck, and still present your work with pride.",
+      "A": "Hide for the rest of the day to avoid anyone seeing it.",
+      "C": "Blame the judges in advance for a decision they haven't made.",
+      "D": "Decide art was never worth doing in the first place."
+    },
+    "correct": "B",
+    "explanation": "The Absurdist response is to keep engaging with life and meaning-making, even when chance ruins the outcome.",
+    "difficulty": 2,
+    "collectible": "The Paper Boat",
+    "card_type": "MONSTER",
+    "cost": 3,
+    "atk": 2,
+    "hp": 3,
+    "tag": "Paper Lifeboat",
+    "rush": false,
+    "abilities": [
+      {
+        "on": "SUMMON",
+        "do": [
+          {
+            "op": "shield",
+            "n": [
+              0,
+              1,
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "on": "DEATH",
+        "do": [
+          {
+            "op": "coin",
+            "heads": [
+              {
+                "op": "return_self"
+              }
+            ],
+            "tails": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ABS-04",
+    "school_id": "ABS",
+    "scenario": "Your carefully prepared group presentation slides won't open on the classroom computer.",
+    "choices": {
+      "C": "Laugh it off, improvise from memory, and keep presenting anyway.",
+      "A": "Panic and tell the teacher the group can't present at all.",
+      "B": "Blame one teammate for using the wrong file format.",
+      "D": "Refuse to speak until the slides are somehow fixed."
+    },
+    "correct": "C",
+    "explanation": "Absurdism responds to a senseless setback by continuing anyway, rather than letting it stop you completely.",
+    "difficulty": 2,
+    "collectible": "The Wildcard",
+    "card_type": "MONSTER",
+    "cost": 3,
+    "atk": 3,
+    "hp": 2,
+    "tag": "Wild Pick",
+    "rush": false,
+    "abilities": [
+      {
+        "on": "SUMMON",
+        "do": [
+          {
+            "op": "one_of",
+            "options": [
+              {
+                "op": "dmg_face",
+                "n": [
+                  3,
+                  4,
+                  5
+                ]
+              },
+              {
+                "op": "shield",
+                "n": [
+                  3,
+                  4,
+                  5
+                ]
+              },
+              {
+                "op": "draw",
+                "n": [
+                  1,
+                  1,
+                  2
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ABS-05",
+    "school_id": "ABS",
+    "scenario": "You trained all season for a race, and it's cancelled on the morning of the event due to a random venue problem.",
+    "choices": {
+      "A": "Accept things don't always make sense, and try again soon.",
+      "B": "Decide training was pointless and quit the sport completely.",
+      "C": "Demand the school repay you for the wasted season.",
+      "D": "Stay angry about it instead of training any further."
+    },
+    "correct": "A",
+    "explanation": "An Absurdist keeps finding ways to act meaningfully, even when circumstances make no sense.",
+    "difficulty": 2,
+    "collectible": "The Lucky Coin",
+    "card_type": "MONSTER",
+    "cost": 3,
+    "atk": 2,
+    "hp": 2,
+    "tag": "Lucky Flip",
+    "rush": false,
+    "abilities": [
+      {
+        "on": "SUMMON",
+        "do": [
+          {
+            "op": "coin",
+            "heads": [
+              {
+                "op": "insight",
+                "n": [
+                  3,
+                  3,
+                  4
+                ]
+              }
+            ],
+            "tails": [
+              {
+                "op": "insight",
+                "n": [
+                  1,
+                  1,
+                  2
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ABS-06",
+    "school_id": "ABS",
+    "scenario": "You accidentally studied the wrong chapter, and you still have to take today's test regardless.",
+    "choices": {
+      "D": "Accept the mix-up, and do your best with what you know.",
+      "A": "Give up on the test completely before it even starts.",
+      "B": "Spend the test complaining to the teacher instead of answering.",
+      "C": "Copy from a neighbour instead of trying with what you know."
+    },
+    "correct": "D",
+    "explanation": "Rather than freezing at an unfair situation, the Absurdist response is to keep going and do what you can.",
+    "difficulty": 1,
+    "collectible": "The Loose Thread",
+    "card_type": "MONSTER",
+    "cost": 2,
+    "atk": 2,
+    "hp": 2,
+    "tag": "Random Snag",
+    "rush": false,
+    "abilities": [
+      {
+        "on": "SUMMON",
+        "do": [
+          {
+            "op": "dmg_random",
+            "n": [
+              1,
+              2,
+              3
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ABS-07",
+    "school_id": "ABS",
+    "scenario": "You left extra early to be exactly on time, and the lift breaks down, making you late anyway.",
+    "choices": {
+      "B": "Shrug off the bad luck, and walk in calmly regardless.",
+      "A": "Arrive stressed and snap at the first person you see.",
+      "C": "Decide punctuality is pointless and stop trying to be on time.",
+      "D": "Retell the story to everyone for the rest of the day, upset."
+    },
+    "correct": "B",
+    "explanation": "Absurdism accepts that careful planning can still be undone by chance, and responds with calm persistence, not despair.",
+    "difficulty": 1,
+    "collectible": "The Circus Ticket",
+    "card_type": "MONSTER",
+    "cost": 4,
+    "atk": 3,
+    "hp": 3,
+    "tag": "Backstage Pass",
+    "rush": false,
+    "abilities": [
+      {
+        "on": "SUMMON",
+        "do": [
+          {
+            "op": "reveal_traps"
+          },
+          {
+            "op": "destroy_traps",
+            "n": [
+              1,
+              1,
+              2
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ABS-08",
+    "school_id": "ABS",
+    "scenario": "A joke meme mocking a school project you were proud of spreads around for no clear reason.",
+    "choices": {
+      "A": "Find some humour in the randomness, rather than take it seriously.",
+      "B": "Assume the meme proves that your work was actually bad.",
+      "C": "Try to track down and argue with everyone who shared it.",
+      "D": "Delete all your work and avoid sharing any projects again."
+    },
+    "correct": "A",
+    "explanation": "Absurdism recognises that reactions like this are often random and senseless, not a fair verdict on your work.",
+    "difficulty": 3,
+    "collectible": "The Kite in the Wind",
+    "card_type": "SPELL",
+    "cost": 2,
+    "atk": 0,
+    "hp": 0,
+    "tag": "Windfall Gambit",
+    "rush": false,
+    "abilities": [
+      {
+        "on": "SPELL",
+        "do": [
+          {
+            "op": "coin",
+            "heads": [
+              {
+                "op": "dmg_face",
+                "n": [
+                  4,
+                  5,
+                  6
+                ]
+              }
+            ],
+            "tails": [
+              {
+                "op": "dmg_self",
+                "n": [
+                  1,
+                  1,
+                  2
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ABS-09",
+    "school_id": "ABS",
+    "scenario": "You followed every safety rule on a school hike, and still got a minor scrape from a random gust of wind.",
+    "choices": {
+      "C": "Accept rules don't guarantee safety, and keep hiking sensibly anyway.",
+      "A": "Decide following rules is pointless since it didn't guarantee safety.",
+      "B": "Blame the hike organisers for the unpredictable weather that day.",
+      "D": "Refuse to go on any future school hikes at all."
+    },
+    "correct": "C",
+    "explanation": "Absurdism accepts that even careful, sensible choices can't guarantee a fair or smooth result every time.",
+    "difficulty": 2,
+    "collectible": "The Punchline",
+    "card_type": "SPELL",
+    "cost": 1,
+    "atk": 0,
+    "hp": 0,
+    "tag": "Laugh Track",
+    "rush": false,
+    "abilities": [
+      {
+        "on": "SPELL",
+        "do": [
+          {
+            "op": "discard_enemy",
+            "n": [
+              1,
+              1,
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "on": "GRAVE",
+        "do": [
+          {
+            "op": "discard_enemy",
+            "n": 1
+          }
+        ],
+        "cost": 2
+      }
+    ]
+  },
+  {
+    "id": "ABS-10",
+    "school_id": "ABS",
+    "scenario": "After years of perfect attendance, you catch a cold right before the ceremony that was going to recognise it.",
+    "choices": {
+      "D": "Accept the irony without resentment, and stay proud of what you achieved.",
+      "A": "Feel bitter and resentful about the timing for a long while.",
+      "B": "Insist on attending sick just to be seen at the ceremony.",
+      "C": "Decide the years of effort no longer count for anything."
+    },
+    "correct": "D",
+    "explanation": "The Absurdist response accepts life's ironic timing while still valuing what was genuinely achieved.",
+    "difficulty": 3,
+    "collectible": "The Evening Star",
+    "card_type": "TRAP",
+    "cost": 2,
+    "atk": 0,
+    "hp": 0,
+    "tag": "Absurd Reversal",
+    "rush": false,
+    "trigger": "ON_SUMMON",
+    "abilities": [
+      {
+        "on": "TRAP",
+        "do": [
+          {
+            "op": "coin",
+            "heads": [
+              {
+                "op": "t_destroy"
+              }
+            ],
+            "tails": [
+              {
+                "op": "t_dmg_summoner",
+                "n": [
+                  2,
+                  3,
+                  3
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "EXI-01",
+    "school_id": "EXI",
+    "scenario": "You can join the football team your parents want you to join, or the art club you truly enjoy.",
+    "choices": {
+      "A": "Choose based on what you value, and own the outcome.",
+      "B": "Join the football team quietly and never mention how you feel.",
+      "C": "Ask a friend to make the decision for you instead.",
+      "D": "Join whichever club is easiest to get into right now."
+    },
+    "correct": "A",
+    "explanation": "Existentialism holds that no one is born with a fixed purpose; you become responsible for the meaning you choose.",
+    "difficulty": 1,
+    "collectible": "The Compass",
+    "card_type": "MONSTER",
+    "cost": 2,
+    "atk": 2,
+    "hp": 2,
+    "tag": "True North",
+    "rush": false,
+    "abilities": [
+      {
+        "on": "SUMMON",
+        "do": [
+          {
+            "op": "search_monster",
+            "n": 1,
+            "m": [
+              2,
+              3,
+              4
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "EXI-02",
+    "school_id": "EXI",
+    "scenario": "Everyone in your friend group is signing up for the same elective, and you're not sure if you actually want it too.",
+    "choices": {
+      "C": "Decide based on what you actually want, even if friends differ.",
+      "A": "Sign up automatically since that's what everyone else is doing.",
+      "B": "Avoid signing up for anything so you don't have to choose.",
+      "D": "Ask your friends to just tell you what to pick."
+    },
+    "correct": "C",
+    "explanation": "An authentic choice comes from your own values, not simply from copying the people around you.",
+    "difficulty": 1,
+    "collectible": "The Open Door",
+    "card_type": "MONSTER",
+    "cost": 1,
+    "atk": 1,
+    "hp": 2,
+    "tag": "Open Door",
+    "rush": false,
+    "abilities": [
+      {
+        "on": "SUMMON",
+        "do": [
+          {
+            "op": "draw",
+            "n": [
+              1,
+              1,
+              2
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "EXI-03",
+    "school_id": "EXI",
+    "scenario": "You have a free Saturday with no homework and no plans.",
+    "choices": {
+      "B": "Choose an activity that feels genuinely meaningful or enjoyable to you.",
+      "A": "Do nothing all day since there's no reason to do anything.",
+      "C": "Wait for someone else to suggest something so you avoid deciding.",
+      "D": "Spend the day worrying about how to spend the day."
+    },
+    "correct": "B",
+    "explanation": "Existentialism says meaning isn't handed to you; you create it through the choices you actively make.",
+    "difficulty": 1,
+    "collectible": "The Blank Page",
+    "card_type": "MONSTER",
+    "cost": 2,
+    "atk": 1,
+    "hp": 3,
+    "tag": "Blank Slate",
+    "rush": false,
+    "abilities": [
+      {
+        "on": "SUMMON",
+        "do": [
+          {
+            "op": "search_spell",
+            "n": 1
+          },
+          {
+            "op": "search_trap",
+            "n": [
+              0,
+              0,
+              1
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "EXI-04",
+    "school_id": "EXI",
+    "scenario": "Your parents have already planned out your entire future career path for you.",
+    "choices": {
+      "D": "Talk honestly with them, while owning that the path is yours.",
+      "A": "Go along with it quietly, even though it isn't your own life.",
+      "B": "Refuse to discuss the topic with them at all.",
+      "C": "Agree out loud, but secretly ignore the plan without telling them."
+    },
+    "correct": "D",
+    "explanation": "Existentialism emphasises taking responsibility for your own choices, which starts with honest ownership of the decision.",
+    "difficulty": 2,
+    "collectible": "The Own Path",
+    "card_type": "MONSTER",
+    "cost": 4,
+    "atk": 3,
+    "hp": 3,
+    "tag": "Own Path",
+    "rush": false,
+    "abilities": [
+      {
+        "on": "ATTACK",
+        "do": [
+          {
+            "op": "buff_self_atk",
+            "n": [
+              1,
+              1,
+              2
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "EXI-05",
+    "school_id": "EXI",
+    "scenario": "A teacher says there is only one “correct” way to interpret a poem the class is studying.",
+    "choices": {
+      "A": "Offer your own honest interpretation, and explain your reasoning clearly.",
+      "B": "Repeat the teacher's interpretation without really thinking it through.",
+      "C": "Stay silent even though you read the poem differently.",
+      "D": "Say the poem is meaningless so you avoid interpreting it."
+    },
+    "correct": "A",
+    "explanation": "Existentialism values forming and owning your own authentic view, rather than simply adopting someone else's.",
+    "difficulty": 2,
+    "collectible": "The Mirror",
+    "card_type": "MONSTER",
+    "cost": 5,
+    "atk": 2,
+    "hp": 4,
+    "tag": "Reflection",
+    "rush": false,
+    "abilities": [
+      {
+        "on": "SUMMON",
+        "do": [
+          {
+            "op": "steal_gy",
+            "fb": [
+              2,
+              3,
+              4
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "EXI-06",
+    "school_id": "EXI",
+    "scenario": "You're the only student in your class who hasn't joined any after-school club.",
+    "choices": {
+      "C": "Decide whether a club is meaningful to you, not just others.",
+      "A": "Join a random club immediately just to match everyone else.",
+      "B": "Feel guilty about it, but keep doing nothing anyway.",
+      "D": "Convince a friend to quit their club too, so you're not alone."
+    },
+    "correct": "C",
+    "explanation": "An authentic choice is based on what you genuinely value, not on matching what everyone else is doing.",
+    "difficulty": 2,
+    "collectible": "The Signature",
+    "card_type": "MONSTER",
+    "cost": 3,
+    "atk": 2,
+    "hp": 3,
+    "tag": "Signed Deal",
+    "rush": false,
+    "abilities": [
+      {
+        "on": "ATTACK",
+        "do": [
+          {
+            "op": "draw",
+            "n": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "EXI-07",
+    "school_id": "EXI",
+    "scenario": "You must pick one book for a report from a long list; none of them are required to be popular choices.",
+    "choices": {
+      "B": "Choose the book that genuinely interests you, and stand by it.",
+      "A": "Pick whichever book your friends picked, even if it doesn't interest you.",
+      "C": "Pick the shortest book without thinking about whether you'll enjoy it.",
+      "D": "Ask the teacher to just assign you one book."
+    },
+    "correct": "B",
+    "explanation": "Existentialism encourages choosing based on genuine interest and standing behind that choice.",
+    "difficulty": 1,
+    "collectible": "The Chosen Road",
+    "card_type": "MONSTER",
+    "cost": 4,
+    "atk": 3,
+    "hp": 3,
+    "tag": "Detour",
+    "rush": false,
+    "abilities": [
+      {
+        "on": "SUMMON",
+        "do": [
+          {
+            "op": "bounce_strongest",
+            "fb": [
+              2,
+              3,
+              4
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "EXI-08",
+    "school_id": "EXI",
+    "scenario": "A friend pressures you to copy their opinion during a class debate instead of forming your own.",
+    "choices": {
+      "A": "Form and state your own honest position on the topic.",
+      "B": "Copy their opinion exactly, since it's easier than thinking it through.",
+      "C": "Stay completely silent for the debate to avoid any disagreement.",
+      "D": "Agree with your friend out loud, then complain about it privately."
+    },
+    "correct": "A",
+    "explanation": "Existentialism holds you responsible for your own genuine views, rather than borrowing someone else's to avoid discomfort.",
+    "difficulty": 3,
+    "collectible": "The First Brushstroke",
+    "card_type": "SPELL",
+    "cost": 3,
+    "atk": 0,
+    "hp": 0,
+    "tag": "First Strokes",
+    "rush": false,
+    "abilities": [
+      {
+        "on": "SPELL",
+        "do": [
+          {
+            "op": "search_monster",
+            "n": 1
+          },
+          {
+            "op": "search_spell",
+            "n": 1
+          },
+          {
+            "op": "draw",
+            "n": [
+              0,
+              0,
+              1
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "EXI-09",
+    "school_id": "EXI",
+    "scenario": "You're unsure what you want to do after secondary school, and it feels like there's no single “right answer” already written for you.",
+    "choices": {
+      "D": "Treat the uncertainty as freedom to shape your own path.",
+      "A": "Panic, since you feel there must be one correct path somewhere.",
+      "B": "Let your parents decide everything so you don't have to think.",
+      "C": "Avoid thinking about the future until it's forced on you."
+    },
+    "correct": "D",
+    "explanation": "Existentialism reframes the lack of a fixed, ready-made purpose as freedom and responsibility, not as a flaw to fix.",
+    "difficulty": 3,
+    "collectible": "The Key",
+    "card_type": "SPELL",
+    "cost": 2,
+    "atk": 0,
+    "hp": 0,
+    "tag": "Skeleton Key",
+    "rush": false,
+    "abilities": [
+      {
+        "on": "SPELL",
+        "do": [
+          {
+            "op": "reveal_traps"
+          },
+          {
+            "op": "destroy_traps",
+            "n": [
+              1,
+              1,
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "on": "GRAVE",
+        "do": [
+          {
+            "op": "destroy_traps",
+            "n": 1
+          }
+        ],
+        "cost": 1
+      }
+    ]
+  },
+  {
+    "id": "EXI-10",
+    "school_id": "EXI",
+    "scenario": "Your team loses a group award because you insisted on doing your part your own way instead of following the group's original plan.",
+    "choices": {
+      "C": "Accept responsibility for the outcome, and reflect honestly.",
+      "A": "Blame the group for not appreciating your different approach.",
+      "B": "Pretend the outcome wasn't really caused by your decision.",
+      "D": "Decide you'll never make your own decisions in a group again."
+    },
+    "correct": "C",
+    "explanation": "Existentialism requires owning the consequences of your freely chosen actions, including honest reflection afterward.",
+    "difficulty": 3,
+    "collectible": "The Ledger",
+    "card_type": "TRAP",
+    "cost": 3,
+    "atk": 0,
+    "hp": 0,
+    "tag": "Ledger Reset",
+    "rush": false,
+    "trigger": "ON_ATTACK",
+    "abilities": [
+      {
+        "on": "TRAP",
+        "do": [
+          {
+            "op": "negate_attack"
+          },
+          {
+            "op": "t_bounce"
+          },
+          {
+            "op": "draw",
+            "n": [
+              0,
+              1,
+              1
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "HED-01",
+    "school_id": "HED",
+    "scenario": "You have one hour before a test tomorrow: you can play your favourite game now, or review your notes.",
+    "choices": {
+      "D": "Review your notes now, and play the game afterward instead.",
+      "A": "Play the game the whole hour, since it feels better right now.",
+      "B": "Do neither, and spend the hour worrying instead.",
+      "C": "Study so intensely that you skip sleep entirely tonight."
+    },
+    "correct": "D",
+    "explanation": "Enlightened Hedonism weighs short-term fun against the longer-term pain of a bad result, and chooses the better overall balance.",
+    "difficulty": 1,
+    "collectible": "The Golden Apple",
+    "card_type": "MONSTER",
+    "cost": 4,
+    "atk": 2,
+    "hp": 3,
+    "tag": "Forbidden Fruit",
+    "rush": true,
+    "abilities": [
+      {
+        "on": "SUMMON",
+        "do": [
+          {
+            "op": "indulge",
+            "n": [
+              3,
+              4,
+              5
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "HED-02",
+    "school_id": "HED",
+    "scenario": "You can eat your favourite candy right before dinner, or wait until afterward.",
+    "choices": {
+      "C": "Wait until after dinner, avoiding a spoiled appetite and discomfort.",
+      "A": "Eat it right away since it's more satisfying in the moment.",
+      "B": "Refuse to ever eat candy, even on special occasions.",
+      "D": "Eat double the amount now to feel extra good immediately."
+    },
+    "correct": "C",
+    "explanation": "Waiting avoids a worse experience shortly after, making it the choice with the better overall pleasure balance.",
+    "difficulty": 1,
+    "collectible": "The Sunbeam",
+    "card_type": "MONSTER",
+    "cost": 1,
+    "atk": 1,
+    "hp": 2,
+    "tag": "Quick Ray",
+    "rush": true,
+    "abilities": [
+      {
+        "on": "SUMMON",
+        "do": [
+          {
+            "op": "indulge",
+            "n": [
+              1,
+              1,
+              2
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "HED-03",
+    "school_id": "HED",
+    "scenario": "Skipping your homework tonight to watch a show sounds fun, but the homework is due first period tomorrow.",
+    "choices": {
+      "A": "Do the homework first, then relax, since tomorrow's stress outweighs tonight's fun.",
+      "B": "Watch the show, and deal with the consequences tomorrow.",
+      "C": "Stay up very late trying to do both at once, exhausted.",
+      "D": "Skip the show, and refuse to relax at all tonight."
+    },
+    "correct": "A",
+    "explanation": "A wise Hedonist compares tonight's fun against tomorrow's stress, and picks the option with better overall balance.",
+    "difficulty": 1,
+    "collectible": "The Honeycomb",
+    "card_type": "MONSTER",
+    "cost": 2,
+    "atk": 2,
+    "hp": 1,
+    "tag": "Sweet Sting",
+    "rush": false,
+    "abilities": [
+      {
+        "on": "SUMMON",
+        "do": [
+          {
+            "op": "dmg_face",
+            "n": [
+              1,
+              2,
+              2
+            ]
+          },
+          {
+            "op": "heal",
+            "n": [
+              1,
+              1,
+              2
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "HED-04",
+    "school_id": "HED",
+    "scenario": "Staying up late gaming feels great, but you have an early school trip departure tomorrow morning.",
+    "choices": {
+      "B": "Consider tomorrow's tiredness, and choose to sleep earlier instead.",
+      "A": "Stay up as late as you want, since gaming feels good now.",
+      "C": "Refuse to game at all tonight, even for a short while.",
+      "D": "Stay up all night, and skip the trip instead."
+    },
+    "correct": "B",
+    "explanation": "Sleeping earlier trades a bit of tonight's fun for a much better, well-rested experience tomorrow — a better overall balance.",
+    "difficulty": 2,
+    "collectible": "The Slow Candle",
+    "card_type": "MONSTER",
+    "cost": 3,
+    "atk": 2,
+    "hp": 4,
+    "tag": "Slow Burn",
+    "rush": false,
+    "abilities": [
+      {
+        "on": "TURN_START",
+        "do": [
+          {
+            "op": "dmg_face",
+            "n": [
+              1,
+              1,
+              2
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "HED-05",
+    "school_id": "HED",
+    "scenario": "A classmate offers to let you copy their answers on tonight's homework, which feels like an easy relief right now.",
+    "choices": {
+      "C": "Do the work yourself, since relief now isn't worth later confusion.",
+      "A": "Copy the answers immediately for the quick relief.",
+      "B": "Report the classmate to the teacher without talking to them first.",
+      "D": "Copy only some answers, thinking it's a fair compromise."
+    },
+    "correct": "C",
+    "explanation": "A wise Hedonist looks past the immediate ease toward the bigger, longer-term discomfort it could cause later.",
+    "difficulty": 2,
+    "collectible": "The Treasured Cup",
+    "card_type": "MONSTER",
+    "cost": 3,
+    "atk": 3,
+    "hp": 2,
+    "tag": "Pay for Pleasure",
+    "rush": false,
+    "abilities": [
+      {
+        "on": "SUMMON",
+        "do": [
+          {
+            "op": "pay_lp",
+            "n": 2
+          },
+          {
+            "op": "draw",
+            "n": [
+              2,
+              2,
+              3
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "HED-06",
+    "school_id": "HED",
+    "scenario": "You can spend all your allowance on snacks today, or save some for a trip you're excited about next month.",
+    "choices": {
+      "D": "Save some of it now, for more enjoyment on next month's trip.",
+      "A": "Spend it all today since that feels good right now.",
+      "B": "Save all of it, and buy nothing enjoyable today either.",
+      "C": "Spend it all today, and borrow money later to make up for it."
+    },
+    "correct": "D",
+    "explanation": "Balancing some enjoyment now with saving for later usually produces more overall pleasure than spending everything immediately.",
+    "difficulty": 2,
+    "collectible": "The Patient Garden",
+    "card_type": "MONSTER",
+    "cost": 3,
+    "atk": 1,
+    "hp": 4,
+    "tag": "Blossoming",
+    "rush": false,
+    "abilities": [
+      {
+        "on": "TURN_END",
+        "do": [
+          {
+            "op": "buff_self_atk",
+            "n": [
+              1,
+              1,
+              2
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "HED-07",
+    "school_id": "HED",
+    "scenario": "Practising a difficult piano piece is boring right now, but skipping practice means struggling more at the recital.",
+    "choices": {
+      "A": "Accept some boredom now, for less recital stress later.",
+      "B": "Skip practice today, since it isn't fun right now.",
+      "C": "Practise for so long it becomes exhausting and no longer enjoyable.",
+      "D": "Quit piano completely, since practice isn't always fun to do."
+    },
+    "correct": "A",
+    "explanation": "A wise Hedonist accepts a little short-term discomfort when it clearly leads to greater pleasure and less pain later.",
+    "difficulty": 2,
+    "collectible": "The Warm Blanket",
+    "card_type": "MONSTER",
+    "cost": 5,
+    "atk": 3,
+    "hp": 5,
+    "tag": "Comfort Zone",
+    "rush": false,
+    "abilities": [
+      {
+        "on": "SUMMON",
+        "do": [
+          {
+            "op": "heal",
+            "n": [
+              3,
+              4,
+              5
+            ]
+          }
+        ]
+      },
+      {
+        "on": "DEATH",
+        "do": [
+          {
+            "op": "heal",
+            "n": [
+              3,
+              4,
+              5
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "HED-08",
+    "school_id": "HED",
+    "scenario": "You're tempted to prank a friend for a quick laugh, even though it might upset them for the rest of the day.",
+    "choices": {
+      "C": "Weigh your brief laugh against their longer discomfort before deciding.",
+      "A": "Do the prank anyway, since your own amusement matters most.",
+      "B": "Prank them, but blame someone else if they end up upset.",
+      "D": "Avoid your friend all day to dodge any reaction."
+    },
+    "correct": "C",
+    "explanation": "Hedonism, done wisely, considers the total pleasure and pain involved for everyone affected, not just your own quick laugh.",
+    "difficulty": 3,
+    "collectible": "The Ripe Fruit",
+    "card_type": "SPELL",
+    "cost": 3,
+    "atk": 0,
+    "hp": 0,
+    "tag": "Sweet Drain",
+    "rush": false,
+    "abilities": [
+      {
+        "on": "SPELL",
+        "do": [
+          {
+            "op": "dmg_face",
+            "n": [
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "op": "heal",
+            "n": [
+              3,
+              4,
+              5
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "HED-09",
+    "school_id": "HED",
+    "scenario": "Watching videos feels more appealing than going outside to play sports with friends today.",
+    "choices": {
+      "B": "Consider which one actually leaves you feeling better afterward.",
+      "A": "Watch videos all day, since it feels easiest right now.",
+      "C": "Force yourself outside even while genuinely unwell, ignoring how you feel.",
+      "D": "Avoid deciding, and end up doing neither activity."
+    },
+    "correct": "B",
+    "explanation": "A wise Hedonist checks which choice leads to better overall enjoyment afterward, not only which feels easiest in the moment.",
+    "difficulty": 2,
+    "collectible": "The Balanced Scale",
+    "card_type": "SPELL",
+    "cost": 1,
+    "atk": 0,
+    "hp": 0,
+    "tag": "Fair Trade",
+    "rush": false,
+    "abilities": [
+      {
+        "on": "SPELL",
+        "do": [
+          {
+            "op": "pay_lp",
+            "n": 2
+          },
+          {
+            "op": "insight",
+            "n": [
+              2,
+              3,
+              3
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "HED-10",
+    "school_id": "HED",
+    "scenario": "You could rush through a chores task to go play sooner, but rushing usually means redoing it properly later.",
+    "choices": {
+      "D": "Do it properly the first time, avoiding a bigger hassle later.",
+      "A": "Rush through it badly so you can go play immediately.",
+      "B": "Refuse to do the chore at all so you can play now.",
+      "C": "Do it so slowly that you have no time left to play."
+    },
+    "correct": "D",
+    "explanation": "Doing it properly the first time avoids a bigger, less enjoyable hassle later — a better overall balance of effort and reward.",
+    "difficulty": 2,
+    "collectible": "The Final Course",
+    "card_type": "TRAP",
+    "cost": 3,
+    "atk": 0,
+    "hp": 0,
+    "tag": "Stolen Moment",
+    "rush": false,
+    "trigger": "ON_ATTACK",
+    "abilities": [
+      {
+        "on": "TRAP",
+        "do": [
+          {
+            "op": "negate_attack"
+          },
+          {
+            "op": "leech_attacker"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "NIH-01",
+    "school_id": "NIH",
+    "scenario": "You spent all afternoon building a sandcastle. The tide washes it away before anyone else sees it. “It didn't matter, since nothing lasts” — how would you respond to this idea?",
+    "choices": {
+      "C": "The joy was in building it, so it mattered regardless.",
+      "A": "Agree completely, and stop building anything ever again.",
+      "B": "Get angry at the tide for taking something that mattered.",
+      "D": "Refuse to think about the question at all."
+    },
+    "correct": "C",
+    "explanation": "This reframes Nihilism's challenge with an Absurdist/Existentialist-style answer: value can come from the experience itself, not only from permanence.",
+    "difficulty": 2,
+    "collectible": "The Hourglass",
+    "card_type": "MONSTER",
+    "cost": 6,
+    "atk": 5,
+    "hp": 5,
+    "tag": "Time's Up",
+    "rush": false,
+    "abilities": [
+      {
+        "on": "SUMMON",
+        "do": [
+          {
+            "op": "destroy_strongest",
+            "fb": [
+              3,
+              4,
+              5
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "NIH-02",
+    "school_id": "NIH",
+    "scenario": "You practised piano for weeks for a recital that got cancelled and never rescheduled. “Was practising pointless since no one ever heard it?”",
+    "choices": {
+      "B": "The skill and enjoyment from practising are still real.",
+      "A": "Yes, decide there's no point practising anything without an audience.",
+      "C": "Blame the people who cancelled the recital for wasting your time.",
+      "D": "Avoid answering the question and change the subject."
+    },
+    "correct": "B",
+    "explanation": "The value of practice doesn't only come from being witnessed; the growth and enjoyment are real either way.",
+    "difficulty": 2,
+    "collectible": "The Sandcastle",
+    "card_type": "MONSTER",
+    "cost": 3,
+    "atk": 3,
+    "hp": 1,
+    "tag": "Crumble",
+    "rush": false,
+    "abilities": [
+      {
+        "on": "DEATH",
+        "do": [
+          {
+            "op": "dmg_all",
+            "n": [
+              2,
+              3,
+              4
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "NIH-03",
+    "school_id": "NIH",
+    "scenario": "A card tower you built falls over the moment you finish it. “If it doesn't last, why bother building it?”",
+    "choices": {
+      "A": "The fun and focus while building still counted.",
+      "B": "Agree, and stop building anything that won't last forever.",
+      "C": "Get angry and refuse to build anything else today.",
+      "D": "Insist the question doesn't matter, and ignore it."
+    },
+    "correct": "A",
+    "explanation": "Enjoyment and focus during an activity are real value, even when the result itself is temporary.",
+    "difficulty": 1,
+    "collectible": "The Ember",
+    "card_type": "MONSTER",
+    "cost": 2,
+    "atk": 2,
+    "hp": 1,
+    "tag": "Last Gasp",
+    "rush": false,
+    "abilities": [
+      {
+        "on": "DEATH",
+        "do": [
+          {
+            "op": "dmg_face",
+            "n": [
+              2,
+              3,
+              4
+            ]
+          }
+        ]
+      },
+      {
+        "on": "MILL",
+        "do": [
+          {
+            "op": "dmg_face",
+            "n": [
+              1,
+              1,
+              2
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "NIH-04",
+    "school_id": "NIH",
+    "scenario": "You help an elderly neighbour carry groceries, and they forget your name by next week. “Does a kind act matter if it isn't remembered?”",
+    "choices": {
+      "D": "The help still mattered in that moment, whether or not it's remembered.",
+      "A": "No, decide it's not worth helping people who won't remember you.",
+      "B": "Feel resentful that your kindness wasn't recognised properly.",
+      "C": "Avoid the question by pretending you never think about it."
+    },
+    "correct": "D",
+    "explanation": "An act's value can exist in the moment it happens, independent of whether it's remembered afterward.",
+    "difficulty": 2,
+    "collectible": "The Echo",
+    "card_type": "MONSTER",
+    "cost": 3,
+    "atk": 2,
+    "hp": 3,
+    "tag": "Echo Draw",
+    "rush": false,
+    "abilities": [
+      {
+        "on": "SUMMON",
+        "do": [
+          {
+            "op": "mill_self",
+            "n": [
+              2,
+              2,
+              3
+            ]
+          }
+        ]
+      },
+      {
+        "on": "GRAVE",
+        "do": [
+          {
+            "op": "draw",
+            "n": [
+              1,
+              1,
+              2
+            ]
+          }
+        ],
+        "cost": 1
+      }
+    ]
+  },
+  {
+    "id": "NIH-05",
+    "school_id": "NIH",
+    "scenario": "Your class picks up litter at the beach, but new litter appears again the very next day. “Was the clean-up pointless since it didn't last?”",
+    "choices": {
+      "B": "The beach was safer for a while, and habits add up.",
+      "A": "Yes, decide clean-ups are a waste of time and stop doing them.",
+      "C": "Blame whoever litters instead of thinking about the question.",
+      "D": "Refuse to think about it further and just move on."
+    },
+    "correct": "B",
+    "explanation": "Temporary results can still be genuinely valuable, especially as part of a repeated, ongoing habit.",
+    "difficulty": 2,
+    "collectible": "The Fingerprint",
+    "card_type": "MONSTER",
+    "cost": 4,
+    "atk": 3,
+    "hp": 2,
+    "tag": "Erase Evidence",
+    "rush": false,
+    "abilities": [
+      {
+        "on": "SUMMON",
+        "do": [
+          {
+            "op": "banish_gy",
+            "n": [
+              3,
+              4,
+              5
+            ]
+          },
+          {
+            "op": "dmg_per_banished",
+            "k": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "NIH-06",
+    "school_id": "NIH",
+    "scenario": "You spent a whole afternoon preparing a joke that only made one friend laugh, and they forgot it by the next day. “Was it worth the effort for one laugh nobody remembers?”",
+    "choices": {
+      "C": "Shared moments have value in the moment, regardless.",
+      "A": "No, decide jokes are pointless if nobody remembers them.",
+      "B": "Feel embarrassed about it, and avoid telling jokes again.",
+      "D": "Ignore the question completely and move on."
+    },
+    "correct": "C",
+    "explanation": "A moment of genuine connection or joy is meaningful when it happens, whether or not it's remembered afterward.",
+    "difficulty": 1,
+    "collectible": "The Falling Leaf",
+    "card_type": "MONSTER",
+    "cost": 2,
+    "atk": 1,
+    "hp": 3,
+    "tag": "Autumn Draw",
+    "rush": false,
+    "abilities": [
+      {
+        "on": "SUMMON",
+        "do": [
+          {
+            "op": "mill_self",
+            "n": [
+              1,
+              2,
+              2
+            ]
+          }
+        ]
+      },
+      {
+        "on": "MILL",
+        "do": [
+          {
+            "op": "draw",
+            "n": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "NIH-07",
+    "school_id": "NIH",
+    "scenario": "In a hundred years, almost no one will remember your name. “So why try hard at anything now?”",
+    "choices": {
+      "A": "The people and choices around you now are real.",
+      "B": "Agree completely, and stop putting effort into anything.",
+      "C": "Get anxious, and avoid thinking about the future at all.",
+      "D": "Decide only famous people's actions can really matter."
+    },
+    "correct": "A",
+    "explanation": "This answers Nihilism's challenge with an Existentialist-style point: present impact and relationships are real value now.",
+    "difficulty": 3,
+    "collectible": "The Ripple",
+    "card_type": "MONSTER",
+    "cost": 5,
+    "atk": 4,
+    "hp": 4,
+    "tag": "Return Ripple",
+    "rush": false,
+    "abilities": [
+      {
+        "on": "SUMMON",
+        "do": [
+          {
+            "op": "revive_strongest",
+            "fb": [
+              3,
+              4,
+              5
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "NIH-08",
+    "school_id": "NIH",
+    "scenario": "You train hard for a school race. Even if you win, next year almost no one will remember who won. “Does winning matter if it's forgotten?”",
+    "choices": {
+      "B": "The growth and pride from training belong to you regardless.",
+      "A": "No, decide there's no point training or competing at all.",
+      "C": "Only try hard when you're sure people will remember it.",
+      "D": "Refuse to answer, and avoid thinking about it."
+    },
+    "correct": "B",
+    "explanation": "Personal growth and pride from effort remain real and yours, independent of how long other people remember the result.",
+    "difficulty": 3,
+    "collectible": "The Candle Stub",
+    "card_type": "SPELL",
+    "cost": 1,
+    "atk": 0,
+    "hp": 0,
+    "tag": "Burn Down",
+    "rush": false,
+    "abilities": [
+      {
+        "on": "SPELL",
+        "do": [
+          {
+            "op": "mill_self",
+            "n": [
+              2,
+              3,
+              4
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "NIH-09",
+    "school_id": "NIH",
+    "scenario": "A sandwich you carefully made for lunch is eaten and gone within five minutes. “Was making it worth the effort, since it doesn't last?”",
+    "choices": {
+      "D": "Some things are meant to be enjoyed, and that's fine.",
+      "A": "No, decide that preparing food carefully is basically a waste.",
+      "B": "Feel annoyed that the sandwich didn't last a bit longer.",
+      "C": "Avoid thinking about the question, and change the subject fast."
+    },
+    "correct": "D",
+    "explanation": "Not everything needs to be permanent to be worthwhile; some value comes precisely from being enjoyed in the moment.",
+    "difficulty": 1,
+    "collectible": "The Footprint in Snow",
+    "card_type": "SPELL",
+    "cost": 4,
+    "atk": 0,
+    "hp": 0,
+    "tag": "Vanish",
+    "rush": false,
+    "abilities": [
+      {
+        "on": "SPELL",
+        "do": [
+          {
+            "op": "banish_strongest",
+            "fb": [
+              3,
+              4,
+              5
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "NIH-10",
+    "school_id": "NIH",
+    "scenario": "Your school will one day be demolished and rebuilt, so nothing about the building is permanent. “Does anything you do here actually matter?”",
+    "choices": {
+      "C": "Your friendships and experiences here are meaningful now, permanence aside.",
+      "A": "No, decide nothing at a temporary place can really matter.",
+      "B": "Feel discouraged, and stop caring about school entirely.",
+      "D": "Avoid the question, and think about something else instead."
+    },
+    "correct": "C",
+    "explanation": "This responds to Nihilism's challenge by locating meaning in present relationships and experience, not in permanence.",
+    "difficulty": 3,
+    "collectible": "The Seed",
+    "card_type": "TRAP",
+    "cost": 3,
+    "atk": 0,
+    "hp": 0,
+    "tag": "Null Seed",
+    "rush": false,
+    "trigger": "ON_SPELL",
+    "abilities": [
+      {
+        "on": "TRAP",
+        "do": [
+          {
+            "op": "negate_spell",
+            "k": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "STO-01",
+    "school_id": "STO",
+    "scenario": "Your group-project teammate did not finish their part before the deadline, and the presentation is in 10 minutes.",
+    "choices": {
+      "B": "Calmly cover the missing part yourself and present your best work.",
+      "A": "Blame your teammate loudly in front of the whole class.",
+      "C": "Refuse to take part in the presentation at all.",
+      "D": "Complain about the unfairness instead of preparing anything."
+    },
+    "correct": "B",
+    "explanation": "A Stoic focuses only on their own actions, which are within their control, and accepts what is not.",
+    "difficulty": 1,
+    "collectible": "The Stoic's Shield",
+    "card_type": "MONSTER",
+    "cost": 1,
+    "atk": 1,
+    "hp": 2,
+    "tag": "Raise Shield",
+    "rush": false,
+    "abilities": [
+      {
+        "on": "SUMMON",
+        "do": [
+          {
+            "op": "shield",
+            "n": [
+              2,
+              3,
+              4
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "STO-02",
+    "school_id": "STO",
+    "scenario": "You studied hard for a test, but got a lower grade than expected because the teacher changed the question format at the last minute.",
+    "choices": {
+      "A": "Accept the result calmly, and adjust your studying approach next time.",
+      "B": "Argue with the teacher that the whole test was unfair.",
+      "C": "Decide studying never works and stop preparing for tests.",
+      "D": "Stay upset about the grade for the rest of the week."
+    },
+    "correct": "A",
+    "explanation": "The format change was outside your control; how you respond and prepare next time is not.",
+    "difficulty": 1,
+    "collectible": "The Anchor",
+    "card_type": "MONSTER",
+    "cost": 2,
+    "atk": 1,
+    "hp": 3,
+    "tag": "Steady Upkeep",
+    "rush": false,
+    "abilities": [
+      {
+        "on": "TURN_START",
+        "do": [
+          {
+            "op": "shield",
+            "n": [
+              1,
+              1,
+              2
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "STO-03",
+    "school_id": "STO",
+    "scenario": "It starts raining right before your outdoor birthday party is about to begin.",
+    "choices": {
+      "C": "Accept the weather calmly, and switch to your indoor plan.",
+      "A": "Blame whoever chose an outdoor venue for the party.",
+      "B": "Cancel the party completely and send everyone home early.",
+      "D": "Spend the party complaining about the rain to your guests."
+    },
+    "correct": "C",
+    "explanation": "The weather can't be controlled, but how calmly and quickly you adapt to it can.",
+    "difficulty": 1,
+    "collectible": "The Iron Will",
+    "card_type": "MONSTER",
+    "cost": 3,
+    "atk": 2,
+    "hp": 3,
+    "tag": "Last Stand",
+    "rush": false,
+    "abilities": [
+      {
+        "on": "DEATH",
+        "do": [
+          {
+            "op": "shield",
+            "n": [
+              3,
+              4,
+              5
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "STO-04",
+    "school_id": "STO",
+    "scenario": "Your bus is late, and you're going to miss the start of a school assembly.",
+    "choices": {
+      "D": "Stay calm, since worrying won't help, and plan your next step.",
+      "A": "Message everyone that the bus company ruined your morning.",
+      "B": "Get off early and sprint the rest of the way, panicking.",
+      "C": "Decide to skip the assembly completely out of frustration."
+    },
+    "correct": "D",
+    "explanation": "A Stoic doesn't waste energy on what they can't change, and instead plans their next controllable step.",
+    "difficulty": 1,
+    "collectible": "The Calm Mind",
+    "card_type": "MONSTER",
+    "cost": 3,
+    "atk": 2,
+    "hp": 3,
+    "tag": "Calm Freeze",
+    "rush": false,
+    "abilities": [
+      {
+        "on": "SUMMON",
+        "do": [
+          {
+            "op": "freeze_strongest"
+          },
+          {
+            "op": "shield",
+            "n": [
+              1,
+              2,
+              2
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "STO-05",
+    "school_id": "STO",
+    "scenario": "You're picked last for a team during PE class.",
+    "choices": {
+      "A": "Accept it wasn't your choice, then play your best anyway.",
+      "B": "Refuse to play for the rest of the lesson.",
+      "C": "Tell the teacher the picking system is completely unfair.",
+      "D": "Sulk on the sidelines instead of joining the game properly."
+    },
+    "correct": "A",
+    "explanation": "Other people's choices about you are outside your control; your own effort afterward is not.",
+    "difficulty": 2,
+    "collectible": "The Steady Hand",
+    "card_type": "MONSTER",
+    "cost": 4,
+    "atk": 3,
+    "hp": 4,
+    "tag": "Steady Healing",
+    "rush": false,
+    "abilities": [
+      {
+        "on": "SUMMON",
+        "do": [
+          {
+            "op": "heal",
+            "n": [
+              2,
+              3,
+              4
+            ]
+          }
+        ]
+      },
+      {
+        "on": "TURN_END",
+        "do": [
+          {
+            "op": "heal",
+            "n": [
+              1,
+              1,
+              2
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "STO-06",
+    "school_id": "STO",
+    "scenario": "A friend cancels plans with you at the last minute for the third time this month.",
+    "choices": {
+      "B": "Calmly plan your time, then share how the pattern feels.",
+      "A": "Send an angry message demanding an explanation right now.",
+      "C": "Assume the friendship is over and stop replying to them.",
+      "D": "Pretend you don't care at all, even though you're upset."
+    },
+    "correct": "B",
+    "explanation": "You can't control your friend's choices, but you can control your own reaction and how you communicate.",
+    "difficulty": 2,
+    "collectible": "The Unshaken Resolve",
+    "card_type": "MONSTER",
+    "cost": 5,
+    "atk": 4,
+    "hp": 5,
+    "tag": "Unshaken",
+    "rush": false,
+    "abilities": [
+      {
+        "on": "SUMMON",
+        "do": [
+          {
+            "op": "silence_strongest"
+          },
+          {
+            "op": "shield",
+            "n": [
+              3,
+              4,
+              5
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "STO-07",
+    "school_id": "STO",
+    "scenario": "You lose a chess tournament final after a strong season of practice.",
+    "choices": {
+      "C": "Focus on what you did, since training is yours.",
+      "A": "Decide the whole season of practice was a waste.",
+      "B": "Blame the organisers for giving you an unfair schedule.",
+      "D": "Avoid playing chess again so you can't lose again."
+    },
+    "correct": "C",
+    "explanation": "The outcome of a single match isn't fully within your control; your preparation and growth are.",
+    "difficulty": 2,
+    "collectible": "The Inner Fortress",
+    "card_type": "MONSTER",
+    "cost": 6,
+    "atk": 5,
+    "hp": 6,
+    "tag": "Fortress",
+    "rush": false,
+    "abilities": [
+      {
+        "on": "SUMMON",
+        "do": [
+          {
+            "op": "shield_per_monster",
+            "n": [
+              2,
+              3,
+              4
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "STO-08",
+    "school_id": "STO",
+    "scenario": "Your phone breaks the night before an important school trip.",
+    "choices": {
+      "A": "Stay calm, and focus on packing what you actually need.",
+      "B": "Panic and stay up all night worrying about the phone.",
+      "C": "Blame your family for not buying a sturdier phone.",
+      "D": "Decide the whole trip is ruined before it even starts."
+    },
+    "correct": "A",
+    "explanation": "The phone breaking is done and outside your control; preparing well for the trip is still within it.",
+    "difficulty": 1,
+    "collectible": "The Quiet Strength",
+    "card_type": "SPELL",
+    "cost": 2,
+    "atk": 0,
+    "hp": 0,
+    "tag": "Recover",
+    "rush": false,
+    "abilities": [
+      {
+        "on": "SPELL",
+        "do": [
+          {
+            "op": "heal",
+            "n": [
+              4,
+              5,
+              6
+            ]
+          }
+        ]
+      },
+      {
+        "on": "GRAVE",
+        "do": [
+          {
+            "op": "heal",
+            "n": [
+              2,
+              3,
+              4
+            ]
+          }
+        ],
+        "cost": 2
+      }
+    ]
+  },
+  {
+    "id": "STO-09",
+    "school_id": "STO",
+    "scenario": "A rumour about you that isn't fully true starts spreading around school.",
+    "choices": {
+      "D": "Calmly correct the facts once, then let the rest go.",
+      "A": "Track down and confront everyone who repeated the rumour.",
+      "B": "Spread a rumour back at whoever started this one.",
+      "C": "Avoid places where you might meet people who heard it."
+    },
+    "correct": "D",
+    "explanation": "You can't control what everyone believes, but you can control whether you respond with calm honesty.",
+    "difficulty": 3,
+    "collectible": "The Clear Horizon",
+    "card_type": "SPELL",
+    "cost": 2,
+    "atk": 0,
+    "hp": 0,
+    "tag": "Clear Path",
+    "rush": false,
+    "abilities": [
+      {
+        "on": "SPELL",
+        "do": [
+          {
+            "op": "reveal_traps"
+          },
+          {
+            "op": "block_traps"
+          },
+          {
+            "op": "shield",
+            "n": [
+              2,
+              3,
+              4
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "STO-10",
+    "school_id": "STO",
+    "scenario": "You're not chosen for the lead role in the school play, even though you prepared well for the audition.",
+    "choices": {
+      "B": "Accept the casting decision, then give full effort to your actual role.",
+      "A": "Quit the play since you didn't get the role you wanted.",
+      "C": "Tell the director their decision was a mistake and demand a recast.",
+      "D": "Perform half-heartedly to show everyone you're upset about it."
+    },
+    "correct": "B",
+    "explanation": "The casting decision was outside your control; how well you perform your actual role is not.",
+    "difficulty": 2,
+    "collectible": "The Still Water",
+    "card_type": "TRAP",
+    "cost": 2,
+    "atk": 0,
+    "hp": 0,
+    "tag": "Still Water",
+    "rush": false,
+    "trigger": "ON_ATTACK",
+    "abilities": [
+      {
+        "on": "TRAP",
+        "do": [
+          {
+            "op": "negate_attack"
+          },
+          {
+            "op": "shield_from_attacker"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "UTI-01",
+    "school_id": "UTI",
+    "scenario": "As class monitor, you have only 5 fun-fair tickets for a class of 30 students who all worked equally hard.",
+    "choices": {
+      "D": "Hold a raffle so every student has an equal chance.",
+      "A": "Give the tickets to your close friends first.",
+      "B": "Sell the tickets to whoever offers the most money.",
+      "C": "Keep the tickets and let students argue it out themselves."
+    },
+    "correct": "D",
+    "explanation": "Utilitarianism seeks the greatest good for the greatest number; a fair, transparent raffle best respects everyone's equal effort.",
+    "difficulty": 2,
+    "collectible": "The Scales",
+    "card_type": "MONSTER",
+    "cost": 3,
+    "atk": 2,
+    "hp": 3,
+    "tag": "Tip the Scales",
+    "rush": false,
+    "abilities": [
+      {
+        "on": "SUMMON",
+        "do": [
+          {
+            "op": "dmg_per_monster",
+            "n": [
+              1,
+              1,
+              2
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "UTI-02",
+    "school_id": "UTI",
+    "scenario": "You're planning a class party with a fixed budget; some classmates want games, others want more food.",
+    "choices": {
+      "B": "Choose the mix that most classmates would enjoy.",
+      "A": "Spend the whole budget on whatever you personally prefer.",
+      "C": "Let whoever complains the loudest decide everything for the class.",
+      "D": "Split the budget evenly without asking anyone what they'd enjoy."
+    },
+    "correct": "B",
+    "explanation": "Utilitarianism looks at overall wellbeing, so gathering input and maximising total enjoyment is the better approach.",
+    "difficulty": 1,
+    "collectible": "The Round Table",
+    "card_type": "MONSTER",
+    "cost": 3,
+    "atk": 2,
+    "hp": 3,
+    "tag": "Round Table",
+    "rush": false,
+    "abilities": [
+      {
+        "on": "SUMMON",
+        "do": [
+          {
+            "op": "buff_allies_hp",
+            "n": [
+              1,
+              2,
+              3
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "UTI-03",
+    "school_id": "UTI",
+    "scenario": "Your group of 4 has only one laptop with a battery about to die, and several small tasks left to finish.",
+    "choices": {
+      "A": "Use the battery on whichever task helps the group most.",
+      "B": "Let whoever grabs the laptop first keep it the whole time.",
+      "C": "Argue about who deserves the laptop most based on friendship.",
+      "D": "Turn the laptop off entirely so no one can use it."
+    },
+    "correct": "A",
+    "explanation": "Utilitarianism directs a limited resource toward the choice that benefits the group's overall progress the most.",
+    "difficulty": 1,
+    "collectible": "The Shared Loaf",
+    "card_type": "MONSTER",
+    "cost": 1,
+    "atk": 2,
+    "hp": 2,
+    "tag": "Share the Loaf",
+    "rush": false,
+    "abilities": [
+      {
+        "on": "SUMMON",
+        "do": [
+          {
+            "op": "share_draw",
+            "n": [
+              1,
+              1,
+              2
+            ],
+            "m": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "UTI-04",
+    "school_id": "UTI",
+    "scenario": "Your class has only 20 rulers to share between 30 students during a measuring activity.",
+    "choices": {
+      "C": "Set up a fair rotation so more students get a turn.",
+      "A": "Let the first 20 students to grab one keep it all lesson.",
+      "B": "Give rulers only to your close friends first.",
+      "D": "Hide an extra ruler so you always have one to yourself."
+    },
+    "correct": "C",
+    "explanation": "A fair rotation gives the most students access to the limited resource, maximising overall benefit.",
+    "difficulty": 1,
+    "collectible": "The Fair Coin",
+    "card_type": "MONSTER",
+    "cost": 2,
+    "atk": 2,
+    "hp": 2,
+    "tag": "Level the Field",
+    "rush": false,
+    "abilities": [
+      {
+        "on": "SUMMON",
+        "do": [
+          {
+            "op": "draw_if_behind",
+            "n": [
+              1,
+              1,
+              2
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "UTI-05",
+    "school_id": "UTI",
+    "scenario": "As team captain, you must choose which 5 of 8 equally-skilled players start a friendly match.",
+    "choices": {
+      "B": "Rotate players fairly so more people get meaningful playing time.",
+      "A": "Always start your closest friends regardless of fairness.",
+      "C": "Let only the loudest players decide who starts each game.",
+      "D": "Pick players randomly with no real plan for the season."
+    },
+    "correct": "B",
+    "explanation": "A fair rotation plan maximises the overall benefit (playing time and enjoyment) across the whole team over time.",
+    "difficulty": 2,
+    "collectible": "The Common Good Badge",
+    "card_type": "MONSTER",
+    "cost": 4,
+    "atk": 3,
+    "hp": 4,
+    "tag": "Greater Good",
+    "rush": false,
+    "abilities": [
+      {
+        "on": "SUMMON",
+        "do": [
+          {
+            "op": "sac_for_team",
+            "n": [
+              2,
+              2,
+              3
+            ],
+            "m": [
+              3,
+              4,
+              5
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "UTI-06",
+    "school_id": "UTI",
+    "scenario": "Your school can fund either a new library reading corner or a new sports item, based on a student vote, but not both.",
+    "choices": {
+      "D": "Support whichever option most students would genuinely benefit from.",
+      "A": "Push for whichever option benefits you personally, regardless of the vote.",
+      "B": "Ignore the vote, and let a small group of friends decide privately.",
+      "C": "Refuse to take part in the decision at all."
+    },
+    "correct": "D",
+    "explanation": "Utilitarianism supports the option that creates the greatest overall benefit, which a fair vote helps identify.",
+    "difficulty": 1,
+    "collectible": "The Ballot",
+    "card_type": "MONSTER",
+    "cost": 3,
+    "atk": 2,
+    "hp": 3,
+    "tag": "Majority Vote",
+    "rush": false,
+    "abilities": [
+      {
+        "on": "TURN_END",
+        "do": [
+          {
+            "op": "shield_per_monster",
+            "n": [
+              1,
+              1,
+              2
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "UTI-07",
+    "school_id": "UTI",
+    "scenario": "You notice a small rule in a game your friends invented that happens to benefit you personally, but makes the game less fun for everyone else.",
+    "choices": {
+      "A": "Suggest changing the rule so the game feels fairer overall.",
+      "B": "Say nothing, and quietly keep benefiting from the unfair rule.",
+      "C": "Insist on keeping the rule since you personally benefit from it.",
+      "D": "Quit the game entirely rather than raise the issue."
+    },
+    "correct": "A",
+    "explanation": "Utilitarianism weighs the good of the whole group above one person's private advantage.",
+    "difficulty": 2,
+    "collectible": "The Open Hand",
+    "card_type": "MONSTER",
+    "cost": 4,
+    "atk": 3,
+    "hp": 3,
+    "tag": "Helping Hand",
+    "rush": false,
+    "abilities": [
+      {
+        "on": "SUMMON",
+        "do": [
+          {
+            "op": "revive_cost_le",
+            "n": 1,
+            "m": [
+              2,
+              3,
+              4
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "UTI-08",
+    "school_id": "UTI",
+    "scenario": "Only one prize is left for a class quiz, and there's an exact tie between two teams.",
+    "choices": {
+      "B": "Propose a fair tie-breaker that keeps the contest enjoyable.",
+      "A": "Give the prize to whichever team you personally prefer.",
+      "C": "Refuse to award any prize at all out of frustration.",
+      "D": "Let the two teams settle it however they want, unsupervised."
+    },
+    "correct": "B",
+    "explanation": "A fair, well-run tie-breaker maximises enjoyment and fairness for the whole class, not just the two teams involved.",
+    "difficulty": 2,
+    "collectible": "The United Banner",
+    "card_type": "SPELL",
+    "cost": 4,
+    "atk": 0,
+    "hp": 0,
+    "tag": "Rally the Fallen",
+    "rush": false,
+    "abilities": [
+      {
+        "on": "SPELL",
+        "do": [
+          {
+            "op": "revive_cost_le",
+            "n": [
+              1,
+              1,
+              2
+            ],
+            "m": [
+              3,
+              3,
+              4
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "UTI-09",
+    "school_id": "UTI",
+    "scenario": "Your group project can either try a flashy but risky idea that might impress the teacher, or use a safer idea that guarantees the whole group passes.",
+    "choices": {
+      "C": "Weigh which choice creates the best outcome for the group.",
+      "A": "Choose the risky idea purely because it's more exciting for you.",
+      "B": "Let one person decide alone without asking the rest of the group.",
+      "D": "Refuse to decide, and let the deadline pass without a plan."
+    },
+    "correct": "C",
+    "explanation": "Utilitarianism asks you to consider the consequences for everyone affected, not just personal excitement.",
+    "difficulty": 2,
+    "collectible": "The Bridge",
+    "card_type": "SPELL",
+    "cost": 3,
+    "atk": 0,
+    "hp": 0,
+    "tag": "Bridge Together",
+    "rush": false,
+    "abilities": [
+      {
+        "on": "SPELL",
+        "do": [
+          {
+            "op": "buff_allies_atk",
+            "n": [
+              1,
+              1,
+              2
+            ]
+          },
+          {
+            "op": "buff_allies_hp",
+            "n": [
+              1,
+              2,
+              2
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "UTI-10",
+    "school_id": "UTI",
+    "scenario": "A charity walk lets you pick one of three routes; a slightly longer route raises more donations for the whole school's charity total.",
+    "choices": {
+      "D": "Choose the route that helps the most, despite the extra effort.",
+      "A": "Pick the shortest route since it's more comfortable for you.",
+      "B": "Pick a route at random without considering the impact.",
+      "C": "Refuse to walk at all if it isn't the easiest option."
+    },
+    "correct": "D",
+    "explanation": "Utilitarianism supports accepting a personal cost when it produces a clearly greater overall benefit for others.",
+    "difficulty": 3,
+    "collectible": "The Equal Share",
+    "card_type": "TRAP",
+    "cost": 2,
+    "atk": 0,
+    "hp": 0,
+    "tag": "Equal Terms",
+    "rush": false,
+    "trigger": "ON_SUMMON",
+    "abilities": [
+      {
+        "on": "TRAP",
+        "do": [
+          {
+            "op": "t_negate_effect"
+          },
+          {
+            "op": "t_weaken",
+            "n": [
+              1,
+              2,
+              3
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]
