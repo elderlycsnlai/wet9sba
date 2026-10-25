@@ -4,7 +4,7 @@ A philosophy card game: answer everyday-dilemma scenarios the way six schools of
 collect a Duel card for every scenario you get right, then build a deck and duel a bot opponent.
 Written in **C++17** with a **raylib** graphical interface; the rules engine contains no graphics code.
 
-## Build and run
+## Prerequisites
 
 You need a C++17 compiler and [CMake](https://cmake.org) 3.16+. The first configure downloads
 raylib 5.5 automatically (internet needed once); an installed raylib 5.0+ is used if CMake finds one.
