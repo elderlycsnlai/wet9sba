@@ -1,0 +1,6 @@
+build/
+saves/*_profile.json
+saves/*_log.json
+saves/*.corrupt-*
+reports/*.txt
+reports/*.csv
