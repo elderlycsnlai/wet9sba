@@ -68,7 +68,7 @@ static void use_grave_effects(be::DuelState& st, Side side, double chance) {
     }
 }
 
-// ---------------------------------------------------------------- Easy
+// ---------------------------------------------------------------- Low diff
 static void play_phase_easy(be::DuelState& st, Side side) {
     for (int i = 0; i < 30; ++i) {
         if (rand_unit() < 0.25) return;
@@ -90,7 +90,7 @@ static void attack_phase_easy(be::DuelState& st, Side side) {
     }
 }
 
-// -------------------------------------------------------------- Normal
+// -------------------------------------------------------------- Midd diff
 static void play_phase_greedy(be::DuelState& st, Side side) {
     for (int i = 0; i < 30; ++i) {
         auto options = playable_indices(st, side);
@@ -119,7 +119,7 @@ static void attack_phase_normal(be::DuelState& st, Side side) {
     }
 }
 
-// ---------------------------------------------------------------- Hard
+// ---------------------------------------------------------------- Max diff
 static void play_phase_hard(be::DuelState& st, Side side) {
     for (int i = 0; i < 30; ++i) {
         auto options = playable_indices(st, side);
